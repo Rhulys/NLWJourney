@@ -7,9 +7,9 @@ Este é um projeto full-stack que utiliza React para o frontend e Node.js para o
 A estrutura do projeto é a seguinte:
 
 /NLW
-|-- /back # Código do servidor Node.js
-|-- /front # Código do cliente React
-|-- README.md # Este arquivo
+|-- /back # Código do servidor Node.js  
+|-- /front # Código do cliente React  
+|-- README.md # Este arquivo  
 |-- .gitignore # Arquivos e pastas a serem ignorados pelo Git
 
 
@@ -20,7 +20,7 @@ A estrutura do projeto é a seguinte:
 1. Navegue até a pasta `backend`:
 
     ```bash
-    cd backend
+    cd back
     ```
 
 2. Instale as dependências:
@@ -41,7 +41,7 @@ A estrutura do projeto é a seguinte:
 4. Inicie o servidor:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 ### Frontend (React)
@@ -49,7 +49,7 @@ A estrutura do projeto é a seguinte:
 1. Navegue até a pasta `frontend`:
 
     ```bash
-    cd ../frontend
+    cd ../front
     ```
 
 2. Instale as dependências:
@@ -67,7 +67,7 @@ A estrutura do projeto é a seguinte:
 4. Inicie o aplicativo React:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Uso
@@ -91,4 +91,4 @@ A estrutura do projeto é a seguinte:
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE`[https://github.com/Rhulys/NLWJourney/blob/main/LICENSE] para mais detalhes.
