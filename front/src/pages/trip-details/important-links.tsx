@@ -1,7 +1,20 @@
 import { Plus, Link2 } from "lucide-react";
+import { useState } from "react";
 import { Button } from "../../components/button";
+import { InputModalOpen } from "./input-modal-link";
 
 export function ImportantLinks() {
+  const [inputModalOpen, setInputModalOpen] = useState(false)
+
+  function openModalLink() {
+    setInputModalOpen(true)
+  }
+  function closeModalLink() {
+    setInputModalOpen(false)
+  }
+
+
+
   return (
     <div className="space-y-6">
       <h2 className="font-semibold text-xl">Links importantes</h2>
@@ -37,10 +50,15 @@ export function ImportantLinks() {
         </div>
       </div>
 
-      <Button variant="secondary" size="full">
+      <Button onClick={openModalLink} variant="secondary" size="full">
         <Plus className="size-5" />
         Cadastrar novo link
       </Button>
+
+
+      {inputModalOpen && (
+        <InputModalOpen closeModalLink={closeModalLink}/>
+      )}
     </div>
   );
 }

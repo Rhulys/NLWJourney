@@ -1,7 +1,6 @@
-import {
-  Plus,
-} from "lucide-react";
+import { Plus } from "lucide-react";
 import { useState } from "react";
+import { InviteGuestsStep } from "../create-trip/steps/invite-guests-step";
 import { Activities } from "./activities";
 import { CreatActivityModal } from "./create-activity-modal";
 import { DestinationAndDateHeader } from "./destination-and-date-header";
@@ -21,7 +20,6 @@ export function TripDetailsPage() {
 
   return (
     <div className="max-w-6xl px-6 py-10 mx-auto space-y-8">
-
       <DestinationAndDateHeader />
 
       <main className="flex gap-8 px-0 md:px-4 flex-col md:flex-row">
@@ -40,13 +38,11 @@ export function TripDetailsPage() {
         </div>
 
         <div className=" w-full md:w-80 space-y-6">
-          
           <ImportantLinks />
 
           <div className="w-full h-px bg-zinc-800" />
 
           <Guests />
-          
         </div>
       </main>
 

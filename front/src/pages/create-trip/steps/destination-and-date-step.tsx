@@ -36,6 +36,9 @@ export function DestinationAndDateStep({
       ? format(eventStartAndEndDates.from, "d 'de 'LLL").concat(' até ').concat(format(eventStartAndEndDates.to, "d 'de 'LLL"))
       : null;
 
+      const today = new Date();
+      today.setDate(today.getDate() + 1);
+
   return (
     <div className="h-48 md:h-16 bg-zinc-900 gap-5 px-4 rounded-xl flex flex-col md:flex-row items-center shadow-shape">
       <div className="flex items-center gap-2 w-full md:flex-1 md:border-none border-b border-zinc-300 pt-2 md:pt-0">
@@ -80,6 +83,7 @@ export function DestinationAndDateStep({
               mode="range"
               selected={eventStartAndEndDates}
               onSelect={setEventStartAndEndDates}
+              disabled={{ before: today }}
             />
           </div>
         </div>
