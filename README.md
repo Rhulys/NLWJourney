@@ -91,4 +91,4 @@ A estrutura do projeto é a seguinte:
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo `LICENSE`[https://github.com/Rhulys/NLWJourney/blob/main/LICENSE] para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
